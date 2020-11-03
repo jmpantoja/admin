@@ -19,6 +19,7 @@ export default {
         vocabulary: 'Vocabulary',
         tags: 'Tags',
         entries: 'Entries',
-    }
+    },
+    tag: 'Tag'
 
 }

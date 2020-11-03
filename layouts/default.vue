@@ -4,7 +4,7 @@
       <v-app id="inspire" class="app">
         <app-drawer class="app--drawer" />
         <app-toolbar class="app--toolbar" />
-        <v-main>
+        <v-main class="main">
           <!-- Page Header -->
           <page-header />
           <div class="page-wrapper">
@@ -43,9 +43,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.main {
+  background-color: #fafafa;
+}
 .page-wrapper {
   min-height: calc(100vh - 64px - 50px - 81px);
-
 }
 .fade {
   &-enter-active, &-leave-active {

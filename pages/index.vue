@@ -1,12 +1,19 @@
 <template>
   <v-container>
-    esto es el dashboard
-
-    {{ this.$i18n.defaultLocale }}
-
+      <v-row>
+        <v-col cols="6">
+          <tag-list style="height: 200px" />
+        </v-col>
+        <v-col cols="6">
+          <tag-list />
+        </v-col>
+      </v-row>
   </v-container>
 </template>
 
 <script>
-export default {}
+import TagList from '~/components/admin/Tag/TagList'
+export default {
+  components: { TagList }
+}
 </script>
